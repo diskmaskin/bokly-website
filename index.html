@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokly - Borrow Books from People Near You</title>
+    <meta name="description" content="Bokly lets you borrow physical books from neighbors and earn money lending yours. Available on iOS.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#c2410c',
+                        'primary-hover': '#9a3412',
+                        'secondary': '#ea580c',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <div class="min-h-screen">
+
+        <!-- Hero -->
+        <section class="relative flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto text-center">
+                <div class="mb-8 flex justify-center">
+                    <img src="bokly-icon.png" alt="Bokly App Icon" class="w-32 h-32 rounded-3xl shadow-2xl" />
+                </div>
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+                    <span class="bg-gradient-to-r from-[#c2410c] to-[#ea580c] bg-clip-text text-transparent">
+                        Bokly
+                    </span>
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Borrow Books from People Near You
+                </p>
+                <p class="text-base sm:text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
+                    A peer-to-peer book borrowing app. Find physical books available within 5 km, borrow them for 75 SEK, and earn money lending your own shelf.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a
+                        href="https://apps.apple.com/app/bokly"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-[#c2410c] text-white rounded-lg font-semibold text-base sm:text-lg px-8 py-4 hover:bg-[#9a3412] transition-colors shadow-lg hover:shadow-xl inline-flex items-center gap-3"
+                    >
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        Download on the App Store
+                    </a>
+                    <a href="#how-it-works" class="border-2 border-gray-300 text-gray-900 rounded-lg font-semibold text-base sm:text-lg px-8 py-4 hover:border-[#c2410c] hover:text-[#c2410c] transition-colors">
+                        Learn More
+                    </a>
+                </div>
+                <div class="mt-8 flex justify-center gap-4">
+                    <div class="bg-gray-100 rounded-full px-4 py-2 text-sm text-gray-600">iOS 17+</div>
+                    <div class="bg-gray-100 rounded-full px-4 py-2 text-sm text-gray-600">Sweden</div>
+                    <div class="bg-gray-100 rounded-full px-4 py-2 text-sm text-gray-600">75 SEK per borrow</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl sm:text-5xl font-bold mb-4">Why Bokly?</h2>
+                    <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+                        A better way to read more and spend less
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-[#c2410c]/50 transition-colors">
+                        <div class="text-4xl mb-4">📍</div>
+                        <h3 class="text-xl font-semibold mb-3">Local Discovery</h3>
+                        <p class="text-gray-600">Browse books available within 5 km of you. Find titles owned by real neighbors, not warehouses.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-[#c2410c]/50 transition-colors">
+                        <div class="text-4xl mb-4">💸</div>
+                        <h3 class="text-xl font-semibold mb-3">Simple Pricing</h3>
+                        <p class="text-gray-600">75 SEK per borrow — cheaper than buying, more flexible than a library. Payments handled securely by Stripe.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-[#c2410c]/50 transition-colors">
+                        <div class="text-4xl mb-4">📚</div>
+                        <h3 class="text-xl font-semibold mb-3">Earn from Your Shelf</h3>
+                        <p class="text-gray-600">List your books and earn 30 SEK each time someone borrows. Put your bookshelf to work.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-[#c2410c]/50 transition-colors">
+                        <div class="text-4xl mb-4">📷</div>
+                        <h3 class="text-xl font-semibold mb-3">Barcode Scanner</h3>
+                        <p class="text-gray-600">Add books instantly by scanning the ISBN barcode. Metadata is fetched automatically — no typing needed.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-[#c2410c]/50 transition-colors">
+                        <div class="text-4xl mb-4">🔔</div>
+                        <h3 class="text-xl font-semibold mb-3">Real-Time Updates</h3>
+                        <p class="text-gray-600">Push notifications keep both sides in sync — request received, approved, picked up, returned.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-[#c2410c]/50 transition-colors">
+                        <div class="text-4xl mb-4">🔒</div>
+                        <h3 class="text-xl font-semibold mb-3">Trusted Community</h3>
+                        <p class="text-gray-600">Sign in with Apple or Google. Phone verification required before borrowing. Real people, real books.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works" class="py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl sm:text-5xl font-bold mb-4">How It Works</h2>
+                    <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Borrowing and lending made simple</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="bg-gray-50 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-8 text-center">Borrow a Book</h3>
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#c2410c] text-white rounded-full flex items-center justify-center font-bold">1</div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Find a Book Near You</h4>
+                                    <p class="text-sm text-gray-600">Browse the Explore tab to see books available within 5 km.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#c2410c] text-white rounded-full flex items-center justify-center font-bold">2</div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Request & Pay</h4>
+                                    <p class="text-sm text-gray-600">Tap Borrow and pay 75 SEK securely. Your request is sent to the owner.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#c2410c] text-white rounded-full flex items-center justify-center font-bold">3</div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Arrange Pickup</h4>
+                                    <p class="text-sm text-gray-600">Once approved, you get the owner's phone number to arrange a meetup.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#c2410c] text-white rounded-full flex items-center justify-center font-bold">4</div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Return Within 26 Days</h4>
+                                    <p class="text-sm text-gray-600">Enjoy the book and return it. Declined requests are fully refunded.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-8 text-center">Lend Your Books</h3>
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#ea580c] text-white rounded-full flex items-center justify-center font-bold">1</div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Add Your Books</h4>
+                                    <p class="text-sm text-gray-600">Scan the ISBN barcode or search by title. Your books appear in the local Explore feed.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#ea580c] text-white rounded-full flex items-center justify-center font-bold">2</div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Receive Requests</h4>
+                                    <p class="text-sm text-gray-600">Get notified when someone wants to borrow. Review the request and approve or decline.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#ea580c] text-white rounded-full flex items-center justify-center font-bold">3</div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Hand Over the Book</h4>
+                                    <p class="text-sm text-gray-600">Meet the borrower and hand over the book. Confirm pickup in the app.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#ea580c] text-white rounded-full flex items-center justify-center font-bold">4</div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Get Paid</h4>
+                                    <p class="text-sm text-gray-600">Earn 30 SEK per borrow, paid out to your account automatically.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Perfect For -->
+        <section class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl sm:text-5xl font-bold mb-4">Perfect For</h2>
+                    <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Everyone who loves books</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg p-6 text-center">
+                        <div class="text-4xl mb-3">📖</div>
+                        <p class="font-medium mb-1">Avid Readers</p>
+                        <p class="text-sm text-gray-500">Read more, spend less</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 text-center">
+                        <div class="text-4xl mb-3">🎓</div>
+                        <p class="font-medium mb-1">Students</p>
+                        <p class="text-sm text-gray-500">Affordable course books</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 text-center">
+                        <div class="text-4xl mb-3">🏠</div>
+                        <p class="font-medium mb-1">Book Owners</p>
+                        <p class="text-sm text-gray-500">Earn from your shelf</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 text-center">
+                        <div class="text-4xl mb-3">🌱</div>
+                        <p class="font-medium mb-1">Eco-Conscious</p>
+                        <p class="text-sm text-gray-500">Share instead of buy</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 text-center">
+                        <div class="text-4xl mb-3">👥</div>
+                        <p class="font-medium mb-1">Community</p>
+                        <p class="text-sm text-gray-500">Connect with neighbors</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 text-center">
+                        <div class="text-4xl mb-3">✈️</div>
+                        <p class="font-medium mb-1">Travelers</p>
+                        <p class="text-sm text-gray-500">Read without carrying</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 text-center">
+                        <div class="text-4xl mb-3">🎁</div>
+                        <p class="font-medium mb-1">Gift Givers</p>
+                        <p class="text-sm text-gray-500">Try before you gift</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 text-center">
+                        <div class="text-4xl mb-3">📚</div>
+                        <p class="font-medium mb-1">Book Clubs</p>
+                        <p class="text-sm text-gray-500">Share monthly picks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="bg-gradient-to-r from-[#c2410c] to-[#ea580c] rounded-3xl p-12 text-white">
+                    <h2 class="text-4xl sm:text-5xl font-bold mb-6">Start Borrowing Today</h2>
+                    <p class="text-xl mb-8 opacity-90">Download Bokly free on the App Store</p>
+                    <a
+                        href="https://apps.apple.com/app/bokly"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-3 bg-white text-[#c2410c] rounded-lg font-semibold text-lg px-8 py-4 hover:bg-gray-100 transition-colors shadow-lg"
+                    >
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        Download on the App Store
+                    </a>
+                    <p class="text-sm mt-6 opacity-75">iOS 17 or later · Free to download</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-500">&copy; 2026 Bokly. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="support.html" class="text-sm text-gray-500 hover:text-[#c2410c] transition-colors">Support</a>
+                    <a href="privacy.html" class="text-sm text-gray-500 hover:text-[#c2410c] transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="text-sm text-gray-500 hover:text-[#c2410c] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

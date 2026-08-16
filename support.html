@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Bokly</title>
+    <meta name="description" content="Get help with Bokly — peer-to-peer book borrowing for iOS.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#c2410c',
+                        'primary-hover': '#9a3412',
+                        'secondary': '#ea580c',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900">
+    <div class="min-h-screen">
+        <header class="py-6 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
+            <div class="max-w-4xl mx-auto flex justify-between items-center">
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                    <img src="bokly-icon.png" alt="Bokly" class="w-10 h-10 rounded-lg">
+                    <span class="text-xl font-bold bg-gradient-to-r from-[#c2410c] to-[#ea580c] bg-clip-text text-transparent">Bokly</span>
+                </a>
+                <a href="index.html" class="text-sm text-gray-500 hover:text-[#c2410c] transition-colors">&larr; Back to Home</a>
+            </div>
+        </header>
+
+        <main class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-8">Support</h1>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+                    <p class="text-gray-600 mb-4">For any questions or issues, reach out to us:</p>
+                    <p class="text-lg"><strong>Email:</strong> <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a></p>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Common Questions</h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">How do I borrow a book?</h3>
+                            <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                                <li>Open Bokly and go to the Explore tab</li>
+                                <li>Browse books available near you (within 5 km)</li>
+                                <li>Tap a book and press Borrow</li>
+                                <li>Complete the 75 SEK payment via Stripe</li>
+                                <li>Wait for the owner to approve your request</li>
+                                <li>Once approved, contact the owner to arrange pickup</li>
+                                <li>Confirm pickup in the app — your 26-day borrow period begins</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">How do I list my books?</h3>
+                            <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                                <li>Go to your Library tab</li>
+                                <li>Tap the + button</li>
+                                <li>Scan the ISBN barcode on the back of the book, or search by title</li>
+                                <li>Confirm the book details and save</li>
+                                <li>Your book is now visible to borrowers nearby</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">What happens when my request is declined?</h3>
+                            <p class="text-gray-600">You will be fully refunded 75 SEK. Refunds are processed by Stripe and typically appear within 5–10 business days depending on your bank.</p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">How long can I borrow a book?</h3>
+                            <p class="text-gray-600">The borrow period is <strong>26 days</strong> from the day you confirm pickup. There is a 3-day grace period after that. If the book is not returned, your account may be restricted from making new borrow requests.</p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">How do I get paid as a lender?</h3>
+                            <p class="text-gray-600">You earn <strong>30 SEK</strong> each time a borrower confirms pickup of your book. Payouts are handled through Stripe Connect and sent to your registered bank account.</p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">Why do I need to verify my phone number?</h3>
+                            <p class="text-gray-600">Phone verification is required before you can borrow or approve borrow requests. When a borrow is approved, the borrower and lender exchange phone numbers to arrange the physical handover. This ensures both parties can reach each other.</p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">How do I delete my account?</h3>
+                            <p class="text-gray-600">Go to <strong>Profile → Delete Account</strong>. This permanently removes your profile, books, borrow history, and all associated data. This action cannot be undone.</p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">The book I borrowed is damaged — what do I do?</h3>
+                            <p class="text-gray-600">Disputes over book condition are between the lender and borrower directly. We recommend discussing the issue with the other party first. If you need further help, contact us at <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a>.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Report a Problem</h2>
+                    <p class="text-gray-600 mb-4">Found a bug or something not working? Email us with:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 mb-6">
+                        <li>Description of the issue</li>
+                        <li>Steps to reproduce</li>
+                        <li>iOS version and Bokly version (found in Settings → General → About)</li>
+                    </ul>
+                    <p class="text-lg"><strong>Email:</strong> <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a></p>
+                </section>
+            </div>
+        </main>
+
+        <footer class="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+            <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-500">&copy; 2026 Bokly. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="support.html" class="text-sm text-gray-500 hover:text-[#c2410c] transition-colors">Support</a>
+                    <a href="privacy.html" class="text-sm text-gray-500 hover:text-[#c2410c] transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="text-sm text-gray-500 hover:text-[#c2410c] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
