@@ -40,7 +40,7 @@
                 <section class="mb-12">
                     <h2 class="text-2xl font-semibold mb-4">1. The Service</h2>
                     <p class="text-gray-600">Bokly provides a peer-to-peer book borrowing service through the Bokly iOS app. By using Bokly you agree to these terms.</p>
-                    <p class="text-gray-600 mt-3">Bokly lets you list physical books from your personal library and lend them to nearby users for a fee of <strong>75 SEK</strong> per borrow. Lenders receive <strong>30 SEK</strong> per completed borrow. The remaining 45 SEK is retained by Bokly as a platform fee.</p>
+                    <p class="text-gray-600 mt-3">Bokly lets you list physical books from your personal library and lend them to nearby users for a fee. The current loan price, lender payout and Bokly platform fee are shown in the app before a request is submitted or accepted.</p>
                 </section>
 
                 <section class="mb-12">
@@ -63,10 +63,10 @@
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-100">
-                                <tr><td class="px-6 py-4 font-medium">Request</td><td class="px-6 py-4">Borrower pays 75 SEK via Stripe. The borrow request is created.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Request</td><td class="px-6 py-4">Borrower reviews the current price and pays via Stripe. The borrow request is created.</td></tr>
                                 <tr><td class="px-6 py-4 font-medium">Approve</td><td class="px-6 py-4">Lender approves; borrower receives lender's phone number.</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Decline</td><td class="px-6 py-4">Lender declines; borrower is refunded 75 SEK in full.</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Confirm Pickup</td><td class="px-6 py-4">Borrower confirms physical handover; 26-day borrow period begins; lender earns 30 SEK.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Decline</td><td class="px-6 py-4">Lender declines; borrower is refunded the amount paid in full.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Confirm Pickup</td><td class="px-6 py-4">Borrower confirms physical handover; the 26-day borrow period begins and the displayed lender payout is initiated.</td></tr>
                                 <tr><td class="px-6 py-4 font-medium">Return</td><td class="px-6 py-4">Borrower marks returned; lender confirms receipt; book becomes available again.</td></tr>
                             </tbody>
                         </table>
