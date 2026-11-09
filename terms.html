@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Bokly</title>
-    <meta name="description" content="Bokly Terms of Service — rules for borrowing and lending books.">
+    <meta name="description" content="Bokly Terms of Service: how borrowing, payments and lender payouts work.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -35,88 +35,117 @@
         <main class="py-16 px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto">
                 <h1 class="text-4xl sm:text-5xl font-bold mb-4">Terms of Service</h1>
-                <p class="text-gray-500 mb-12">Last updated: 2026-08-01</p>
+                <p class="text-gray-500 mb-12">Last updated: 2026-11-09</p>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+                    <p class="text-gray-600">Bokly provides a peer-to-peer book lending service through the Bokly app. By creating an account or using Bokly you agree to these terms.</p>
+                    <p class="text-gray-600 mt-3">Bokly is run by <strong>Bokly</strong>, a sole trader (enskild näringsidkare), org.nr 890102-6594, Järfällavägen 98A, 177 41 Järfälla, Sweden. Email: <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a>.</p>
+                </section>
 
                 <section class="mb-12">
                     <h2 class="text-2xl font-semibold mb-4">1. The Service</h2>
-                    <p class="text-gray-600">Bokly provides a peer-to-peer book borrowing service through the Bokly iOS app. By using Bokly you agree to these terms.</p>
-                    <p class="text-gray-600 mt-3">Bokly lets you list physical books from your personal library and lend them to nearby users for a fee. The current loan price, lender payout and Bokly platform fee are shown in the app before a request is submitted or accepted.</p>
+                    <p class="text-gray-600">Bokly lets you list physical books from your own library and lend them to people nearby. A borrow costs the borrower <strong>59 SEK</strong>. When the borrow is completed, the lender earns <strong>30 SEK</strong> and Bokly keeps <strong>29 SEK</strong> as its service fee.</p>
+                    <p class="text-gray-600 mt-4">The loan of a book is between the lender and the borrower. Bokly provides the app, handles the payment and pays out the lender's earnings.</p>
                 </section>
 
                 <section class="mb-12">
                     <h2 class="text-2xl font-semibold mb-4">2. Accounts</h2>
                     <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span>You must be 18 or older to create an account and use the payment features.</li>
-                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span>You must provide a valid phone number before borrowing or approving borrow requests.</li>
-                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span>You are responsible for all activity under your account.</li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>You must be 18 or older to create an account.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>You need a valid phone number to borrow or lend.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>One account per person. Keep your details accurate and up to date.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>You're responsible for what happens under your account.</span></li>
                     </ul>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">3. Borrow Flow and Payments</h2>
+                    <h2 class="text-2xl font-semibold mb-4">3. Borrowing and Payment</h2>
                     <div class="overflow-x-auto">
                         <table class="w-full text-sm text-left text-gray-600 border border-gray-200 rounded-xl overflow-hidden">
                             <thead class="bg-gray-50 text-gray-700 uppercase text-xs">
-                                <tr>
-                                    <th class="px-6 py-3">Step</th>
-                                    <th class="px-6 py-3">What happens</th>
-                                </tr>
+                                <tr><th class="px-6 py-3">Step</th><th class="px-6 py-3">What happens</th></tr>
                             </thead>
                             <tbody class="divide-y divide-gray-100">
-                                <tr><td class="px-6 py-4 font-medium">Request</td><td class="px-6 py-4">Borrower reviews the current price and pays via Stripe. The borrow request is created.</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Approve</td><td class="px-6 py-4">Lender approves; borrower receives lender's phone number.</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Decline</td><td class="px-6 py-4">Lender declines; borrower is refunded the amount paid in full.</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Confirm Pickup</td><td class="px-6 py-4">Borrower confirms physical handover; the 26-day borrow period begins and the displayed lender payout is initiated.</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Return</td><td class="px-6 py-4">Borrower marks returned; lender confirms receipt; book becomes available again.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Request</td><td class="px-6 py-4">59 SEK is reserved on your card or wallet (such as Apple Pay) through Stripe. Nothing is charged yet. The lender sees your email address and phone number so they can contact you.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Approve</td><td class="px-6 py-4">The lender approves and the 59 SEK is charged. You get the lender's email address, phone number and drop-off location to arrange the pickup.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Decline, cancel or no answer</td><td class="px-6 py-4">If the lender declines, you cancel, or the lender doesn't answer within <strong>5 days</strong>, the reservation is released and you aren't charged.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Pickup</td><td class="px-6 py-4">You confirm in the app that you've picked up the book. Your <strong>26-day</strong> borrow period starts.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Return</td><td class="px-6 py-4">You return the book and mark it as returned. The lender confirms they got it back, and the borrow is completed.</td></tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="text-gray-600 mt-4">Payments are processed by Stripe. By making a payment you also agree to <a href="https://stripe.com/legal" class="text-[#c2410c] hover:underline" target="_blank">Stripe's Terms of Service</a>.</p>
+                    <p class="text-gray-600 mt-4">Payments are processed by Stripe. By paying you also agree to <a href="https://stripe.com/legal" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Stripe's terms</a>.</p>
+                    <p class="text-gray-600 mt-4">Once a request is approved the fee is charged. If the lender doesn't hand over the book, contact <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a> and we'll look into a refund.</p>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">4. Borrow Period and Overdue Books</h2>
-                    <p class="text-gray-600">The borrow period is <strong>26 days</strong>. A <strong>3-day grace period</strong> follows before a book is marked overdue. If a book is not returned within the grace period, the account may be restricted from making further borrow requests until the book is returned or the matter is resolved.</p>
-                </section>
-
-                <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">5. Condition of Books</h2>
-                    <p class="text-gray-600">Lenders are responsible for listing books in accurately described condition. Borrowers must return books in the same condition they were received. Bokly does not mediate disputes over book condition — these are between the lender and borrower directly.</p>
-                </section>
-
-                <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">6. Prohibited Conduct</h2>
+                    <h2 class="text-2xl font-semibold mb-4">4. Lender Earnings and Payouts</h2>
                     <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start gap-3"><span class="text-red-500 mt-1">&#10005;</span>List books you do not own or do not have the right to lend</li>
-                        <li class="flex items-start gap-3"><span class="text-red-500 mt-1">&#10005;</span>Create multiple accounts to circumvent account restrictions</li>
-                        <li class="flex items-start gap-3"><span class="text-red-500 mt-1">&#10005;</span>Use the app for any unlawful purpose</li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>You earn <strong>30 SEK</strong> for each borrow of your book that is <strong>completed</strong>, meaning you've confirmed that the book was returned. Nothing is earned for a borrow that is cancelled, declined, expired or not returned.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>Your earnings are shown in the app. You can cash out once you have at least <strong>100 SEK</strong>.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>The first time you cash out, you set up a payout account with our payment provider Stripe (Stripe Connect). Stripe asks for your name, date of birth, address and a bank account or debit card, and you agree to the <a href="https://stripe.com/legal/connect-account" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Stripe Connected Account Agreement</a>. Bokly doesn't see your full bank or card details.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>Standard payout:</strong> to your bank account, usually within 1–3 business days. Free.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>Instant payout:</strong> to your debit card or an eligible bank account, usually within 30 minutes, any day. Any fee is shown before you confirm; it's currently 0 SEK.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>If the borrower's payment is refunded or disputed, or the borrow breaks these terms, we may withhold or reverse the related earning.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>You're responsible for declaring your earnings for tax where required.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>Cash out before you delete your account. You can't delete your account while you have earnings that haven't been paid out.</span></li>
                     </ul>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">7. Limitation of Liability</h2>
-                    <p class="text-gray-600">Bokly is a platform connecting lenders and borrowers. We are not liable for the condition of books, failed handovers, or disputes between users. Our total liability for any claim is limited to the amount paid for the borrow in question.</p>
+                    <h2 class="text-2xl font-semibold mb-4">5. Borrow Period and Overdue Books</h2>
+                    <p class="text-gray-600">The borrow period is <strong>26 days</strong>, followed by a <strong>3-day grace period</strong>. If the book still isn't returned after that, your account is automatically restricted from borrowing.</p>
+                    <p class="text-gray-600 mt-4">A lender can also mark a book as not returned, which restricts the borrower's account. To resolve a restriction, return the book or contact <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a>.</p>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">8. Termination</h2>
-                    <p class="text-gray-600">We may suspend or delete accounts that violate these terms. You may delete your account at any time from <strong>Profile → Delete Account</strong>.</p>
+                    <h2 class="text-2xl font-semibold mb-4">6. Condition of Books</h2>
+                    <p class="text-gray-600">Lenders must describe their books honestly. Borrowers must return books in the condition they received them. Disputes about a book's condition are between the lender and the borrower, but you can contact <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a> and we'll try to help.</p>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">9. Changes</h2>
-                    <p class="text-gray-600">We may update these terms. The "Last updated" date at the top will reflect any changes. Continued use of the app after changes constitutes acceptance.</p>
+                    <h2 class="text-2xl font-semibold mb-4">7. Not Allowed</h2>
+                    <p class="text-gray-600">You may not:</p>
+                    <ul class="space-y-3 text-gray-600 mt-4">
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>list books you don't own or aren't allowed to lend</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>create more than one account, for example to get around a restriction</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>arrange borrows found through Bokly outside the app to avoid the fee</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>use Bokly for anything unlawful, or to harass other users</span></li>
+                    </ul>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">10. Governing Law</h2>
-                    <p class="text-gray-600">These terms are governed by Swedish law. Any disputes will be resolved in Swedish courts.</p>
+                    <h2 class="text-2xl font-semibold mb-4">8. Liability</h2>
+                    <p class="text-gray-600">Bokly connects lenders and borrowers. We aren't responsible for the condition of books, for handovers that don't happen, or for disputes between users. Our total liability for a claim is limited to the fee paid for the borrow in question.</p>
+                    <p class="text-gray-600 mt-4">This doesn't limit any rights you have under mandatory consumer law, or our liability for gross negligence or intent.</p>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">11. Contact</h2>
-                    <p class="text-lg"><strong>Email:</strong> <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a></p>
+                    <h2 class="text-2xl font-semibold mb-4">9. Ending Your Account</h2>
+                    <p class="text-gray-600">You can delete your account at any time in the app: <strong>Profile → Delete Account</strong>. It isn't possible while a book is being borrowed (by you or from you), while a book you borrowed is marked as not returned, or while you have earnings that haven't been paid out.</p>
+                    <p class="text-gray-600 mt-4">We may restrict, suspend or delete accounts that break these terms.</p>
+                    <p class="text-gray-600 mt-4">How we handle your data, including after deletion, is described in our <a href="privacy.html" class="text-[#c2410c] hover:underline">Privacy Policy</a>.</p>
                 </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">10. Changes</h2>
+                    <p class="text-gray-600">When we change these terms we update the date at the top. If a change is significant, we'll tell you in the app before it takes effect. If you don't agree, you can delete your account.</p>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">11. Governing Law and Disputes</h2>
+                    <p class="text-gray-600">These terms are governed by Swedish law. If we can't solve a complaint together, consumers can turn to the National Board for Consumer Disputes (<a href="https://www.arn.se" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">ARN</a>) or a Swedish court.</p>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">12. Contact</h2>
+                    <p class="text-gray-600"><a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a></p>
+                </section>
+
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <p class="text-lg font-semibold text-gray-800">Summary: borrowers pay 59 SEK per borrow, lenders earn 30 SEK when the book comes back, and Stripe handles the money.</p>
+                </div>
             </div>
         </main>
 
