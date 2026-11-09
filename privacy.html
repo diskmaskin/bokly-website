@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Bokly</title>
-    <meta name="description" content="Bokly Privacy Policy — how we collect and use your data.">
+    <meta name="description" content="Bokly Privacy Policy: what data we collect, who can see it, and your rights under the GDPR.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -35,103 +35,147 @@
         <main class="py-16 px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto">
                 <h1 class="text-4xl sm:text-5xl font-bold mb-4">Privacy Policy</h1>
-                <p class="text-gray-500 mb-12">Last updated: 2026-08-01</p>
+                <p class="text-gray-500 mb-12">Last updated: 2026-11-09</p>
 
                 <section class="mb-12">
                     <h2 class="text-2xl font-semibold mb-4">Overview</h2>
-                    <p class="text-gray-600">Bokly ("we", "us", or "our") operates the Bokly iOS app. This policy explains what data we collect, how we use it, and your rights.</p>
+                    <p class="text-gray-600">This policy explains what personal data the Bokly app collects, why, who can see it, and your rights under the EU General Data Protection Regulation (GDPR).</p>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">1. Data We Collect</h2>
+                    <h2 class="text-2xl font-semibold mb-4">1. Who is responsible for your data</h2>
+                    <p class="text-gray-600">The data controller is <strong>Bokly</strong>, a sole trader (enskild n&auml;ringsidkare) owned by <strong>Md Rezaur Rahman</strong>, J&auml;rf&auml;llav&auml;gen 98A, 177 41 J&auml;rf&auml;lla, Sweden (&ldquo;Bokly&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;).</p>
+                    <p class="text-gray-600 mt-3">Questions about your data: <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a></p>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">2. Data We Collect</h2>
                     <div class="overflow-x-auto">
                         <table class="w-full text-sm text-left text-gray-600 border border-gray-200 rounded-xl overflow-hidden">
                             <thead class="bg-gray-50 text-gray-700 uppercase text-xs">
-                                <tr>
-                                    <th class="px-6 py-3">Data</th>
-                                    <th class="px-6 py-3">Why</th>
-                                </tr>
+                                <tr><th class="px-6 py-3">Data</th><th class="px-6 py-3">Why</th></tr>
                             </thead>
                             <tbody class="divide-y divide-gray-100">
-                                <tr><td class="px-6 py-4 font-medium">Name</td><td class="px-6 py-4">Shown on your public profile and book listings</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Email address</td><td class="px-6 py-4">Authentication via Sign in with Apple or Google</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Phone number</td><td class="px-6 py-4">Required to approve or borrow books; shared with the counterparty on approval</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Precise location</td><td class="px-6 py-4">Sorts nearby books in the Explore tab; stored to help others find books near them</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Profile photo</td><td class="px-6 py-4">Optional avatar shown across the app</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Device token (APNs)</td><td class="px-6 py-4">Delivers push notifications for borrow requests, approvals, and returns</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Name from Sign in with Apple or Google</td><td class="px-6 py-4">Your account. Not shown to other users.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Email address</td><td class="px-6 py-4">Signing in, borrow notifications by email, and contact between borrower and owner (see section 4)</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Library name</td><td class="px-6 py-4">Shown to other users next to your books</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Phone number</td><td class="px-6 py-4">Required to borrow or lend; shared with the other person in a borrow (see section 4)</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Location</td><td class="px-6 py-4">When you allow location access, your device&rsquo;s position is stored. It&rsquo;s used to show books near you and the distance to them. Other users only see it rounded to about 1&nbsp;km (see section 4).</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Profile photo</td><td class="px-6 py-4">Optional, shown on your profile</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Your books and reading status</td><td class="px-6 py-4">The books you add; books you mark as public are visible to other users</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Borrow and payment history</td><td class="px-6 py-4">Your requests, their status, dates and amounts, and the Stripe payment reference. <strong>Not</strong> your card details.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Account status</td><td class="px-6 py-4">Whether borrowing is restricted for your account and why (for example a book that wasn&rsquo;t returned)</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">In-app messages</td><td class="px-6 py-4">Notifications in your Bokly inbox</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Device token</td><td class="px-6 py-4">Sending push notifications to your phone</td></tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="text-gray-600 mt-4">We do not collect data for advertising or tracking purposes.</p>
+                    <p class="text-gray-600 mt-4">When you scan or add a book, its ISBN is sent to Open Library to fetch the title and cover. No personal data is sent with it.</p>
+                    <p class="text-gray-600 mt-3">We don&rsquo;t collect data for advertising or tracking, and we don&rsquo;t sell your data.</p>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">2. Third-Party Services</h2>
-                    <div class="space-y-4">
-                        <div class="bg-gray-50 rounded-xl p-6">
-                            <p class="font-semibold mb-1">Supabase</p>
-                            <p class="text-gray-600 text-sm">Database, authentication, real-time events, file storage. <a href="https://supabase.com/privacy" class="text-[#c2410c] hover:underline" target="_blank">Privacy policy</a></p>
-                        </div>
-                        <div class="bg-gray-50 rounded-xl p-6">
-                            <p class="font-semibold mb-1">Stripe</p>
-                            <p class="text-gray-600 text-sm">Payment processing. Payment card details are entered directly into Stripe's secure sheet and are never seen or stored by Bokly. <a href="https://stripe.com/privacy" class="text-[#c2410c] hover:underline" target="_blank">Privacy policy</a></p>
-                        </div>
-                        <div class="bg-gray-50 rounded-xl p-6">
-                            <p class="font-semibold mb-1">Apple Sign in with Apple / Google OAuth</p>
-                            <p class="text-gray-600 text-sm">Authentication only.</p>
-                        </div>
+                    <h2 class="text-2xl font-semibold mb-4">3. Why We Use It, and on What Legal Basis</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-600 border border-gray-200 rounded-xl overflow-hidden">
+                            <thead class="bg-gray-50 text-gray-700 uppercase text-xs">
+                                <tr><th class="px-6 py-3">Purpose</th><th class="px-6 py-3">Legal basis (GDPR art. 6)</th></tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr><td class="px-6 py-4 font-medium">Running your account, showing books near you, borrow requests, payments and notifications</td><td class="px-6 py-4">Performance of our agreement with you (the Terms of Service)</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Safety: one active borrow at a time, restricting accounts with unreturned books, preventing misuse</td><td class="px-6 py-4">Our legitimate interest in a safe, working lending service</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Keeping payment and bookkeeping records</td><td class="px-6 py-4">Legal obligation (Swedish Bookkeeping Act)</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Using your location and sending push notifications</td><td class="px-6 py-4">Your consent, given through your phone&rsquo;s permission prompts. You can withdraw it at any time in your phone&rsquo;s settings for Bokly.</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Answering support requests</td><td class="px-6 py-4">Our legitimate interest in helping you</td></tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">3. How We Use Your Data</h2>
+                    <h2 class="text-2xl font-semibold mb-4">4. Who Can See Your Data</h2>
+                    <p class="text-gray-600"><strong>Any signed-in Bokly user</strong> can see:</p>
                     <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>App functionality</strong> — matching borrowers with lenders, facilitating payments, sending notifications</span></li>
-                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>Safety</strong> — enforcing one active borrow per user, restricting accounts with unreturned books</span></li>
-                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>Support</strong> — responding to enquiries sent to support@bokly.app</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your library name and the books you&rsquo;ve made public</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your location <strong>rounded to about 1&nbsp;km</strong>, used to show how far away your books are</span></li>
                     </ul>
-                    <p class="text-gray-600 mt-4">We do not sell your data to third parties.</p>
+                    <p class="text-gray-600 mt-4"><strong>When you request to borrow a book</strong>, its owner sees your <strong>email address and phone number</strong>, so they can contact you about the request.</p>
+                    <p class="text-gray-600 mt-3"><strong>When the owner approves</strong>, you see the owner&rsquo;s <strong>email address, phone number and exact location</strong> (the drop-off point). This lasts while the borrow is in progress. Contact details that were already sent to you or the other person, for example in an in-app message or email, stay there.</p>
+                    <p class="text-gray-600 mt-3">Other users never see your name from Sign in with Apple or Google, and never see your exact location unless you have an approved borrow with them.</p>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">4. Data Sharing</h2>
-                    <p class="text-gray-600">Your phone number is shared with the book lender when a borrow request is approved, and with the borrower when the lender approves. This is the core mechanic of the app and is disclosed at the time of the action.</p>
-                    <p class="text-gray-600 mt-3">Your location is used to calculate proximity to other users' books. We do not display your exact address.</p>
+                    <h2 class="text-2xl font-semibold mb-4">5. Service Providers</h2>
+                    <p class="text-gray-600 mb-4">We use these providers to run Bokly. They process data on our behalf or as independent controllers for their own services:</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-600 border border-gray-200 rounded-xl overflow-hidden">
+                            <thead class="bg-gray-50 text-gray-700 uppercase text-xs">
+                                <tr><th class="px-6 py-3">Provider</th><th class="px-6 py-3">What for</th><th class="px-6 py-3">Where</th></tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr><td class="px-6 py-4 font-medium"><a href="https://supabase.com/privacy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Supabase</a></td><td class="px-6 py-4">Database, sign-in, file storage (profile photos), server functions</td><td class="px-6 py-4">EU (Ireland)</td></tr>
+                                <tr><td class="px-6 py-4 font-medium"><a href="https://stripe.com/privacy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Stripe</a></td><td class="px-6 py-4">Card and wallet payments (such as Apple Pay). Stripe receives your payment details directly in its secure payment sheet; Bokly never sees or stores your card number. Stripe keeps its own payment records.</td><td class="px-6 py-4">EU and USA</td></tr>
+                                <tr><td class="px-6 py-4 font-medium"><a href="https://resend.com/legal/privacy-policy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Resend</a></td><td class="px-6 py-4">Sending notification emails</td><td class="px-6 py-4">EU (Ireland)</td></tr>
+                                <tr><td class="px-6 py-4 font-medium"><a href="https://www.apple.com/legal/privacy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Apple</a></td><td class="px-6 py-4">Sign in with Apple, push notifications on iPhone</td><td class="px-6 py-4">USA</td></tr>
+                                <tr><td class="px-6 py-4 font-medium"><a href="https://policies.google.com/privacy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Google</a></td><td class="px-6 py-4">Sign in with Google</td><td class="px-6 py-4">USA</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-gray-600 mt-4">Where data is transferred outside the EU/EEA, this is covered by the EU&ndash;US Data Privacy Framework or the European Commission&rsquo;s standard contractual clauses.</p>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">5. Data Retention</h2>
-                    <p class="text-gray-600">Your data is retained for as long as your account exists. You can delete your account at any time from <strong>Profile → Delete Account</strong>. Deletion removes your profile, books, borrow history, inbox messages, and device token. Authentication records held by Supabase are also deleted.</p>
-                </section>
-
-                <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">6. Your Rights</h2>
+                    <h2 class="text-2xl font-semibold mb-4">6. How Long We Keep It, and Deleting Your Account</h2>
+                    <p class="text-gray-600">We keep your data for as long as you have an account.</p>
+                    <p class="text-gray-600 mt-3">You can delete your account at any time in the app: <strong>Profile &rarr; Delete Account</strong>. This permanently deletes:</p>
                     <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span>Access the data we hold about you</li>
-                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span>Correct inaccurate data (edit your profile in-app)</li>
-                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span>Delete your account and all associated data (in-app)</li>
-                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span>Withdraw location permission at any time (iOS Settings → Bokly → Location)</li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your profile (name, email, phone number, library name, location) and profile photo</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your books and reading status</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your borrow requests and history</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your in-app messages and device tokens</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your login</span></li>
                     </ul>
-                    <p class="text-gray-600 mt-4">For any other requests, contact us at <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a>.</p>
+                    <p class="text-gray-600 mt-4">Pending borrow requests are cancelled and their payment reservations released, so nobody is charged.</p>
+                    <p class="text-gray-600 mt-3">You can&rsquo;t delete your account while a book is being borrowed, either by you or from you, or while a book you borrowed is marked as not returned. Finish the borrow first, or contact <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a>.</p>
+                    <p class="text-gray-600 mt-3"><strong>What is kept after deletion:</strong></p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>Payment records at Stripe</strong> (amount, date, payment method details and the related Bokly IDs). We are required to keep bookkeeping records for 7 years under the Swedish Bookkeeping Act.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>Messages and emails already delivered to other users</strong>, which may contain your library name, email or phone number from a past borrow.</span></li>
+                    </ul>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">7. Children</h2>
-                    <p class="text-gray-600">Bokly is not directed at children under 13. We do not knowingly collect data from children.</p>
+                    <h2 class="text-2xl font-semibold mb-4">7. Your Rights</h2>
+                    <p class="text-gray-600 mb-3">Under the GDPR you have the right to:</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>access</strong> the data we hold about you and get a copy of it</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>correct</strong> inaccurate data (most of it you can edit in the app)</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>delete</strong> your data (in the app, see section 6)</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>restrict</strong> or <strong>object to</strong> processing based on our legitimate interest</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>data portability</strong>: get your data in a machine-readable format</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>withdraw consent</strong> for location and push notifications at any time in your phone&rsquo;s settings</span></li>
+                    </ul>
+                    <p class="text-gray-600 mt-4">To use these rights, email <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a>. We&rsquo;ll reply within one month.</p>
+                    <p class="text-gray-600 mt-3">You can also complain to the Swedish Authority for Privacy Protection (IMY), <a href="https://www.imy.se" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">www.imy.se</a>.</p>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">8. Changes</h2>
-                    <p class="text-gray-600">We may update this policy. The "Last updated" date at the top will reflect any changes. Continued use of the app after changes constitutes acceptance.</p>
+                    <h2 class="text-2xl font-semibold mb-4">8. Children</h2>
+                    <p class="text-gray-600">You must be 18 or older to use Bokly (see the <a href="terms.html" class="text-[#c2410c] hover:underline">Terms of Service</a>). We don&rsquo;t knowingly collect data from anyone under 18; if you believe we have, contact <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a> and we&rsquo;ll delete it.</p>
                 </section>
 
                 <section class="mb-12">
-                    <h2 class="text-2xl font-semibold mb-4">9. Contact</h2>
+                    <h2 class="text-2xl font-semibold mb-4">9. Changes</h2>
+                    <p class="text-gray-600">When we change this policy we update the date at the top. If a change significantly affects how we use your data, we&rsquo;ll tell you in the app before it takes effect.</p>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">10. Contact</h2>
                     <p class="text-lg"><strong>Email:</strong> <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a></p>
                 </section>
 
                 <div class="bg-gray-50 rounded-xl p-6">
-                    <p class="text-lg font-semibold text-gray-800">Summary: Bokly collects only what is needed to operate the app. We never sell your data.</p>
+                    <p class="text-lg font-semibold text-gray-800">Summary: Bokly collects only what is needed to run the app. Other users see your contact details only when you borrow from or lend to them. We never sell your data.</p>
                 </div>
             </div>
         </main>
