@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Back to Bokly</title>
+    <style>
+        :root { color-scheme: light dark; }
+        body { font-family: -apple-system, system-ui, sans-serif; display: flex; min-height: 100vh; margin: 0;
+               align-items: center; justify-content: center; text-align: center; padding: 24px; box-sizing: border-box; }
+        a { color: #c2410c; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <main>
+        <p>Your payout details are saved. Returning you to the Bokly app…</p>
+        <p><a href="bokly://payouts/return">Open Bokly</a></p>
+    </main>
+    <script>
+        // Stripe Connect onboarding returns here (https only); this hands the user back to the
+        // app, which is waiting for bokly://payouts/return (Bokly issue #19).
+        window.location.replace("bokly://payouts/return");
+    </script>
+</body>
+</html>
