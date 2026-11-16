@@ -35,7 +35,7 @@
         <main class="py-16 px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto">
                 <h1 class="text-4xl sm:text-5xl font-bold mb-4">Privacy Policy</h1>
-                <p class="text-gray-500 mb-12">Last updated: 2026-11-09</p>
+                <p class="text-gray-500 mb-12">Last updated: 2026-11-13</p>
 
                 <section class="mb-12">
                     <h2 class="text-2xl font-semibold mb-4">Overview</h2>
@@ -64,7 +64,8 @@
                                 <tr><td class="px-6 py-4 font-medium">Profile photo</td><td class="px-6 py-4">Optional, shown on your profile</td></tr>
                                 <tr><td class="px-6 py-4 font-medium">Your books and reading status</td><td class="px-6 py-4">The books you add; books you mark as public are visible to other users</td></tr>
                                 <tr><td class="px-6 py-4 font-medium">Borrow and payment history</td><td class="px-6 py-4">Your requests, their status, dates and amounts, and the Stripe payment reference. <strong>Not</strong> your card details.</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Account status</td><td class="px-6 py-4">Whether borrowing is restricted for your account and why (for example a book that wasn&rsquo;t returned)</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Earnings and payouts (lenders)</td><td class="px-6 py-4">The 30&nbsp;SEK you earn per completed borrow and its status, your cash-outs (amount, date, standard or instant, status), and the ID of your Stripe payout account. <strong>Not</strong> your bank account or card details, your date of birth or your ID documents: Stripe collects those directly (see section 5).</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Account status</td><td class="px-6 py-4">Whether borrowing is restricted for your account and why (for example a book that wasn&rsquo;t returned, or a payment disputed with your bank)</td></tr>
                                 <tr><td class="px-6 py-4 font-medium">In-app messages</td><td class="px-6 py-4">Notifications in your Bokly inbox</td></tr>
                                 <tr><td class="px-6 py-4 font-medium">Device token</td><td class="px-6 py-4">Sending push notifications to your phone</td></tr>
                             </tbody>
@@ -82,9 +83,9 @@
                                 <tr><th class="px-6 py-3">Purpose</th><th class="px-6 py-3">Legal basis (GDPR art. 6)</th></tr>
                             </thead>
                             <tbody class="divide-y divide-gray-100">
-                                <tr><td class="px-6 py-4 font-medium">Running your account, showing books near you, borrow requests, payments and notifications</td><td class="px-6 py-4">Performance of our agreement with you (the Terms of Service)</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Safety: one active borrow at a time, restricting accounts with unreturned books, preventing misuse</td><td class="px-6 py-4">Our legitimate interest in a safe, working lending service</td></tr>
-                                <tr><td class="px-6 py-4 font-medium">Keeping payment and bookkeeping records</td><td class="px-6 py-4">Legal obligation (Swedish Bookkeeping Act)</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Running your account, showing books near you, borrow requests, payments, lender earnings and payouts, and notifications</td><td class="px-6 py-4">Performance of our agreement with you (the Terms of Service)</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Safety: one active borrow at a time, restricting accounts with unreturned books or disputed payments, preventing misuse</td><td class="px-6 py-4">Our legitimate interest in a safe, working lending service</td></tr>
+                                <tr><td class="px-6 py-4 font-medium">Keeping payment, earnings and payout records for bookkeeping</td><td class="px-6 py-4">Legal obligation (Swedish Bookkeeping Act)</td></tr>
                                 <tr><td class="px-6 py-4 font-medium">Using your location and sending push notifications</td><td class="px-6 py-4">Your consent, given through your phone&rsquo;s permission prompts. You can withdraw it at any time in your phone&rsquo;s settings for Bokly.</td></tr>
                                 <tr><td class="px-6 py-4 font-medium">Answering support requests</td><td class="px-6 py-4">Our legitimate interest in helping you</td></tr>
                             </tbody>
@@ -114,7 +115,7 @@
                             </thead>
                             <tbody class="divide-y divide-gray-100">
                                 <tr><td class="px-6 py-4 font-medium"><a href="https://supabase.com/privacy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Supabase</a></td><td class="px-6 py-4">Database, sign-in, file storage (profile photos), server functions</td><td class="px-6 py-4">EU (Ireland)</td></tr>
-                                <tr><td class="px-6 py-4 font-medium"><a href="https://stripe.com/privacy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Stripe</a></td><td class="px-6 py-4">Card and wallet payments (such as Apple Pay). Stripe receives your payment details directly in its secure payment sheet; Bokly never sees or stores your card number. Stripe keeps its own payment records.</td><td class="px-6 py-4">EU and USA</td></tr>
+                                <tr><td class="px-6 py-4 font-medium"><a href="https://stripe.com/privacy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Stripe</a></td><td class="px-6 py-4">Card and wallet payments (such as Apple Pay). Stripe receives your payment details directly in its secure payment sheet; Bokly never sees or stores your card number. Stripe keeps its own payment records.<br><br><strong>Lender payouts (Stripe Connect):</strong> when you set up payouts, Stripe collects your name, date of birth, address, your bank account or debit card and, if it needs to, ID documents, to verify your identity as payment law requires and to pay you. Stripe processes this as a controller under its own privacy policy. Bokly only receives your Stripe account ID and whether payouts are enabled.</td><td class="px-6 py-4">EU and USA</td></tr>
                                 <tr><td class="px-6 py-4 font-medium"><a href="https://resend.com/legal/privacy-policy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Resend</a></td><td class="px-6 py-4">Sending notification emails</td><td class="px-6 py-4">EU (Ireland)</td></tr>
                                 <tr><td class="px-6 py-4 font-medium"><a href="https://www.apple.com/legal/privacy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Apple</a></td><td class="px-6 py-4">Sign in with Apple, push notifications on iPhone</td><td class="px-6 py-4">USA</td></tr>
                                 <tr><td class="px-6 py-4 font-medium"><a href="https://policies.google.com/privacy" class="text-[#c2410c] hover:underline" target="_blank" rel="noopener">Google</a></td><td class="px-6 py-4">Sign in with Google</td><td class="px-6 py-4">USA</td></tr>
@@ -132,14 +133,17 @@
                         <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your profile (name, email, phone number, library name, location) and profile photo</span></li>
                         <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your books and reading status</span></li>
                         <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your borrow requests and history</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your earnings history and the link to your Stripe payout account</span></li>
                         <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your in-app messages and device tokens</span></li>
                         <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span>your login</span></li>
                     </ul>
                     <p class="text-gray-600 mt-4">Pending borrow requests are cancelled and their payment reservations released, so nobody is charged.</p>
-                    <p class="text-gray-600 mt-3">You can&rsquo;t delete your account while a book is being borrowed, either by you or from you, or while a book you borrowed is marked as not returned. Finish the borrow first, or contact <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a>.</p>
+                    <p class="text-gray-600 mt-3">You can&rsquo;t delete your account while a book is being borrowed, either by you or from you, or while a book you borrowed is marked as not returned. Finish the borrow first, or contact <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a>. If you have earnings that haven&rsquo;t been paid out, the app asks you to cash them out or give them up first.</p>
                     <p class="text-gray-600 mt-3"><strong>What is kept after deletion:</strong></p>
                     <ul class="space-y-3 text-gray-600">
                         <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>Payment records at Stripe</strong> (amount, date, payment method details and the related Bokly IDs). We are required to keep bookkeeping records for 7 years under the Swedish Bookkeeping Act.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>Earnings you gave up</strong> when deleting your account: the amount and the related borrow, without your name or account, as our bookkeeping record.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>Your Stripe payout account</strong>, if you set one up. Stripe keeps it, and its records of your payouts, under its own privacy policy and legal obligations. To close it, contact <a href="mailto:support@bokly.app" class="text-[#c2410c] hover:underline">support@bokly.app</a>.</span></li>
                         <li class="flex items-start gap-3"><span class="text-[#c2410c] mt-1">&#10003;</span><span><strong>Messages and emails already delivered to other users</strong>, which may contain your library name, email or phone number from a past borrow.</span></li>
                     </ul>
                 </section>
